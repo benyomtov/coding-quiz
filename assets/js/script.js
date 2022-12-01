@@ -31,6 +31,10 @@ var confirmWin = false;
 var yourScore = document.getElementById("your-score");
 var playAgain = document.getElementById("play-again");
 
+var userInitials = document.getElementById("initials");
+var score;
+var submitScore = document.getElementById("submit-score");
+
 var timeEl = document.getElementById("timer");
 var secondsLeft = 30;
 
@@ -129,6 +133,7 @@ wrongButton5.forEach(function(event) {
 rightButton5.addEventListener("click", function() {
     alert("Correct!");
     confirmWin = true;
+    score = secondsLeft;
     fifthQuestion.style.display = "none";
     youWin.style.display = "block";
     yourScore.textContent = "Your score is: " + secondsLeft + ".";
@@ -150,3 +155,22 @@ function losingScreen() {
     });
 
 }
+
+submitScore.addEventListener("click", function() {
+    var oldUser = localStorage.getItem("user");
+    var oldScore = localStorage.getItem("score");
+    var user = userInitials.value;
+
+    score = [score, oldScore];
+    user = [user, oldUser];
+
+  
+    localStorage.setItem("user", user);
+    localStorage.setItem("score", score);
+
+    
+    
+
+});
+
+
