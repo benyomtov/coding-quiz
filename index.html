@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <title>Coding Quiz</title>
+</head>
+<body>
+    <div id="title-screen">
+        <h1>Coding Quiz Challenge!</h1>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus exercitationem obcaecati temporibus nobis voluptas corrupti facilis autem inventore atque officiis ullam iure a, architecto nam neque. Eos accusantium impedit sint?</p>
+        <button class="start-button">Begin Quiz!</button>
+    </div>
+    <h2 id="timer"></h2>
+    <div class="questions" id="first-question">
+        <h1>What Pokemon is Grass type?</h1>
+        <button class="wrong-button">Pikachu</button>
+        <button class="wrong-button">Snorlax</button>
+        <button class="right-button">Venusaur</button>
+        <button class="wrong-button">Butterfree</button>
+    </div>
+    <div class="questions" id="second-question">
+        <h1>What Pokemon can fly?</h1>
+        <button class="right-button-2">Gyrados</button>
+        <button class="wrong-button-2">Tangela</button>
+        <button class="wrong-button-2">Mankey</button>
+        <button class="wrong-button-2">Onix</button>
+    </div>
+    <div class="questions" id="third-question">
+        <h1>Who is the second Gym Leader in Pokemon Red?</h1>
+        <button class="right-button-3">Misty</button>
+        <button class="wrong-button-3">Ash Ketchum</button>
+        <button class="wrong-button-3">Pikachu!</button>
+        <button class="wrong-button-3">Brock</button>
+    </div>
+    <div class="questions" id="fourth-question">
+        <h1>Which is the best Pokeball?</h1>
+        <button class="wrong-button-4">Pokeball</button>
+        <button class="wrong-button-4">Great Ball</button>
+        <button class="wrong-button-4">Ultra Ball</button>
+        <button class="right-button-4">Master Ball</button>
+    </div>
+    <div class="questions" id="fifth-question">
+        <h1>Which is a legendary Pokemon</h1>
+        <button class="wrong-button-5">Rattata</button>
+        <button class="wrong-button-5">Pidgeot</button>
+        <button class="right-button-5">Mew</button>
+        <button class="wrong-button-5">Diglett</button>
+    </div>
+    <div id="you-lose">
+        <h1>You Lose!</h1>
+        <button id="try-again">Try Again?</button>
+    </div>
+    <div id="you-win">
+        <h1>You completed the quiz!</h1>
+        <h2 id="your-score"></h2>
+        <label for="initials">Enter your initials here:</label>
+        <input type="text" id="initials" name="initials">
+        <input type="submit" value="Submit">
+        <button id="play-again">Play Again?</button>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
