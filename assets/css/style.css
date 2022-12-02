@@ -1,27 +1,214 @@
-#first-question {
-    display: none;
+#title-screen {
+    text-align: center;
+    padding: 150px 0;
+    margin: 20px;
 }
 
+#title-screen h1 {
+    font-family: 'Nerko One', cursive;
+    font-size: 72px;
+    color: rebeccapurple;
+    text-shadow: 10px 10px 10px yellow;
+}
+
+#title-screen p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    padding: 0 30px;
+}
+
+#title-screen button {
+    font-family: 'Nerko One', cursive;
+    font-size: 40px;
+    background-color: rgb(14, 87, 14);
+    color: yellow;
+    border-radius: 25px;
+    border: 2px solid rgb(2, 37, 13);
+    padding: 0 35px;
+}
+
+#title-screen button:hover {
+    background-color: yellow;
+    color:rgb(14, 87, 14);
+
+}
+
+#title-screen button:active {
+    background-color: white;
+    color:black; 
+}
+
+.questions {
+    display: none;
+    text-align: center;
+    padding: 150px 0;
+    margin: 20px;
+}
+
+.questions h1 {
+    font-family: 'Nerko One', cursive;
+    font-size: 56px;
+    color: rebeccapurple;
+}
+
+.questions button {
+    font-family: 'Nerko One', cursive;
+    font-size: 32px;
+    background-color: rgb(14, 87, 14);
+    color: yellow;
+    border-radius: 25px;
+    border: 2px solid rgb(2, 37, 13);
+    padding: 0 35px;
+}
+
+.questions button:hover {
+    background-color: yellow;
+    color:rgb(14, 87, 14); 
+}
+
+.questions button:active {
+    background-color: white;
+    color:black; 
+}
+
+#timer {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: red;
+    text-shadow: 1px 1px 1px black;
+    font-size: 32px;
+    padding: 50px 50px 0 50px;
+    margin: 0;
+}
 #second-question {
     display: none;
+    text-align: center;
+    padding: 150px 0;
+    margin: 20px;
 }
 
 #third-question {
     display: none;
+    text-align: center;
+    padding: 150px 0;
+    margin: 20px;
 }
 
 #fourth-question {
     display: none;
+    text-align: center;
+    padding: 150px 0;
+    margin: 20px;
 }
 
 #fifth-question {
     display: none;
+    text-align: center;
+    padding: 150px 0;
+    margin: 20px;
 }
 
 #you-lose {
     display: none;
+    text-align: center;
+    padding: 150px 0;
+    margin: 20px;
 }
+
+#you-lose h1 {
+    font-family: 'Nerko One', cursive;
+    font-size: 72px;
+    color: rebeccapurple;
+    text-shadow: 10px 10px 10px yellow;
+}
+
+#you-lose button {
+    font-family: 'Nerko One', cursive;
+    font-size: 32px;
+    background-color: rgb(14, 87, 14);
+    color: yellow;
+    border-radius: 25px;
+    border: 2px solid rgb(2, 37, 13);
+    padding: 0 35px;
+
+}
+
+#you-lose button:hover {
+    background-color: yellow;
+    color:rgb(14, 87, 14); 
+}
+
+#you-lose button:active {
+    background-color: white;
+    color:black; 
+}
+
 
 #you-win {
     display: none;
+    text-align: center;
+    padding: 150px 0;
+    margin: 20px;
+}
+
+#you-win h1 {
+    font-family: 'Nerko One', cursive;
+    font-size: 72px;
+    color: rebeccapurple;
+    text-shadow: 10px 10px 10px yellow;
+}
+
+#you-win h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+}
+
+#you-win label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+} 
+
+#submit-score {
+    font-family: 'Nerko One', cursive;
+    font-size: 32px;
+    border: 2px solid rgb(2, 37, 13);
+    padding: 0 35px;
+    margin-right: 10px;
+}
+
+#submit-score:hover {
+    background-color: black;
+    color: white;
+}
+
+#submit-score:active {
+    background-color: rgb(219, 0, 0);
+    color: white;
+}
+
+#play-again {
+    font-family: 'Nerko One', cursive;
+    font-size: 32px;
+    background-color: rgb(14, 87, 14);
+    color: yellow;
+    border-radius: 25px;
+    border: 2px solid rgb(2, 37, 13);
+    padding: 0 35px;
+}
+
+#play-again:hover {
+    background-color: yellow;
+    color:rgb(14, 87, 14); 
+}
+
+#play-again:active {
+    background-color: white;
+    color:black; 
+}
+
+#initials {
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 32px;
+    margin: 10px;
 }

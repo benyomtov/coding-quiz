@@ -4,50 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./assets/css/style.css"/>
     <title>Coding Quiz</title>
 </head>
 <body>
     <div id="title-screen">
         <h1>Coding Quiz Challenge!</h1>
-        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus exercitationem obcaecati temporibus nobis voluptas corrupti facilis autem inventore atque officiis ullam iure a, architecto nam neque. Eos accusantium impedit sint?</p>
+        <p>Try to answer as many questions as you can before the timer runs out! Every wrong answer will result in 5 seconds being deducted from your time. If you get all answers correct, your score will be equal to the time remaining.</p>
         <button class="start-button">Begin Quiz!</button>
     </div>
     <h2 id="timer"></h2>
     <div class="questions" id="first-question">
-        <h1>What Pokemon is Grass type?</h1>
-        <button class="wrong-button">Pikachu</button>
-        <button class="wrong-button">Snorlax</button>
-        <button class="right-button">Venusaur</button>
-        <button class="wrong-button">Butterfree</button>
+        <h1>Which of the following keywords defines a variable in JavaScript?</h1>
+        <button class="wrong-button">button</button>
+        <button class="wrong-button">const</button>
+        <button class="right-button">var</button>
+        <button class="wrong-button">div</button>
     </div>
+    <audio id="wrong-sound" src="./assets/sounds/wrong.wav"></audio>
+    <audio id="correct-sound" src="./assets/sounds/correctsound.mp3"></audio>
     <div class="questions" id="second-question">
-        <h1>What Pokemon can fly?</h1>
-        <button class="right-button-2">Gyrados</button>
-        <button class="wrong-button-2">Tangela</button>
-        <button class="wrong-button-2">Mankey</button>
-        <button class="wrong-button-2">Onix</button>
+        <h1>Which of the following is used to create an element in JavaScript?</h1>
+        <button class="right-button-2">.createElement</button>
+        <button class="wrong-button-2">.getElementById</button>
+        <button class="wrong-button-2">.push</button>
+        <button class="wrong-button-2">.pop</button>
     </div>
     <div class="questions" id="third-question">
-        <h1>Who is the second Gym Leader in Pokemon Red?</h1>
-        <button class="right-button-3">Misty</button>
-        <button class="wrong-button-3">Ash Ketchum</button>
-        <button class="wrong-button-3">Pikachu!</button>
-        <button class="wrong-button-3">Brock</button>
+        <h1>What is a collection of multiple values in Javascript?</h1>
+        <button class="right-button-3">array</button>
+        <button class="wrong-button-3">string</button>
+        <button class="wrong-button-3">number</button>
+        <button class="wrong-button-3">boolean</button>
     </div>
     <div class="questions" id="fourth-question">
-        <h1>Which is the best Pokeball?</h1>
-        <button class="wrong-button-4">Pokeball</button>
-        <button class="wrong-button-4">Great Ball</button>
-        <button class="wrong-button-4">Ultra Ball</button>
-        <button class="right-button-4">Master Ball</button>
+        <h1>The Boolean data type stores what type of information?</h1>
+        <button class="wrong-button-4">words</button>
+        <button class="wrong-button-4">numbers</button>
+        <button class="wrong-button-4">letters</button>
+        <button class="right-button-4">true/false</button>
     </div>
     <div class="questions" id="fifth-question">
-        <h1>Which is a legendary Pokemon</h1>
-        <button class="wrong-button-5">Rattata</button>
-        <button class="wrong-button-5">Pidgeot</button>
-        <button class="right-button-5">Mew</button>
-        <button class="wrong-button-5">Diglett</button>
+        <h1>After you declare a function, you need to _____ a function.</h1>
+        <button class="wrong-button-5">code</button>
+        <button class="wrong-button-5">canvas</button>
+        <button class="right-button-5">call</button>
+        <button class="wrong-button-5">card</button>
     </div>
     <div id="you-lose">
         <h1>You Lose!</h1>

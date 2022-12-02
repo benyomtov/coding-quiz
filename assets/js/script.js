@@ -38,6 +38,9 @@ var submitScore = document.getElementById("submit-score");
 var timeEl = document.getElementById("timer");
 var secondsLeft = 30;
 
+var wrongSound = document.getElementById("wrong-sound");
+var rightSound = document.getElementById("correct-sound");
+
 startQuiz.addEventListener("click", function() {
     confirmWin = false;
     titleScreen.style.display = "none";
@@ -49,8 +52,8 @@ startQuiz.addEventListener("click", function() {
 function setTime() {
     var timerInterval = setInterval(function() {
         timeEl.style.display = "block";
-        secondsLeft--;
         timeEl.textContent = secondsLeft + " seconds left!";
+        secondsLeft--;
         if (secondsLeft <= 0) {
             clearInterval(timerInterval);
             secondsLeft = 30;
@@ -72,66 +75,66 @@ function setTime() {
 
 wrongButton.forEach(function(event) {
     event.addEventListener("click", function() {
-        alert("Incorrect!")
+        wrongSound.play();
         secondsLeft = (secondsLeft - 5);
     });
 });
 
 
 rightButton.addEventListener("click", function() {
-    alert("Correct!");
+    rightSound.play();
     firstQuestion.style.display = "none";
     secondQuestion.style.display = "block";
 });
 
 wrongButton2.forEach(function(event) {
     event.addEventListener("click", function() {
-        alert("Incorrect!")
+        wrongSound.play();
         secondsLeft = (secondsLeft - 5);
     });
 });
 
 rightButton2.addEventListener("click", function() {
-    alert("Correct!");
+    rightSound.play();
     secondQuestion.style.display = "none";
     thirdQuestion.style.display = "block";
 });
 
 wrongButton3.forEach(function(event) {
     event.addEventListener("click", function() {
-        alert("Incorrect!")
+        wrongSound.play();
         secondsLeft = (secondsLeft - 5);
     });
 });
 
 rightButton3.addEventListener("click", function() {
-    alert("Correct!");
+    rightSound.play();
     thirdQuestion.style.display = "none";
     fourthQuestion.style.display = "block";
 });
 
 wrongButton4.forEach(function(event) {
     event.addEventListener("click", function() {
-        alert("Incorrect!")
+        wrongSound.play();
         secondsLeft = (secondsLeft - 5);
     });
 });
 
 rightButton4.addEventListener("click", function() {
-    alert("Correct!");
+    rightSound.play();
     fourthQuestion.style.display = "none";
     fifthQuestion.style.display = "block";
 });
 
 wrongButton5.forEach(function(event) {
     event.addEventListener("click", function() {
-        alert("Incorrect!")
+        wrongSound.play();
         secondsLeft = (secondsLeft - 5);
     });
 });
 
 rightButton5.addEventListener("click", function() {
-    alert("Correct!");
+    rightSound.play();
     confirmWin = true;
     score = secondsLeft;
     fifthQuestion.style.display = "none";
@@ -167,10 +170,6 @@ submitScore.addEventListener("click", function() {
   
     localStorage.setItem("user", user);
     localStorage.setItem("score", score);
-
-    
-    
-
 });
 
 

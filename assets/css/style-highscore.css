@@ -1,0 +1,59 @@
+div {
+    text-align: center;
+    padding: 150px 0;
+    margin: 20px;
+}
+
+h1 {
+    font-family: 'Nerko One', cursive;
+    font-size: 72px;
+    color: rebeccapurple;
+    text-shadow: 10px 10px 10px yellow;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    padding: 0 30px;
+}
+
+button {
+    font-family: 'Nerko One', cursive;
+    font-size: 32px;
+    background-color: rgb(14, 87, 14);
+    color: yellow;
+    border-radius: 25px;
+    border: 2px solid rgb(2, 37, 13);
+    padding: 0 35px;
+}
+
+button:hover {
+    background-color: yellow;
+    color:rgb(14, 87, 14);
+
+}
+
+button:active {
+    background-color: white;
+    color:black; 
+}
+
+#clear-scores {
+    font-family: 'Nerko One', cursive;
+    font-size: 32px;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(2, 37, 13);
+    padding: 0 35px;
+    margin-right: 10px;
+}
+
+#clear-scores:hover {
+    background-color: black;
+    color: white;
+}
+
+#clear-scores:active {
+    background-color: rgb(219, 0, 0);
+    color: white;
+}
