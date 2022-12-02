@@ -6,6 +6,7 @@ var clearButton = document.getElementById("clear-scores");
 var scoreArray = score.split(",");
 var userArray = user.split(",");
 
+//prints scores
 function printScores() {
     for (var i = 0; i < (scoreArray.length - 1); i++) {
         var newScore = document.createElement("p");
@@ -17,6 +18,7 @@ function printScores() {
 
 printScores();
 
+//clears scores
 clearButton.addEventListener("click", function() {
     localStorage.clear();
     location.reload();

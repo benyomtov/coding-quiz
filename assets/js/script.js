@@ -1,6 +1,8 @@
+//title screen and start button
 var startQuiz = document.querySelector(".start-button");
 var titleScreen = document.getElementById("title-screen");
 
+//question screens and buttons
 var firstQuestion = document.getElementById("first-question");
 var wrongButton = document.querySelectorAll(".wrong-button");
 var rightButton = document.querySelector(".right-button");
@@ -23,24 +25,30 @@ var rightButton5 = document.querySelector(".right-button-5");
 
 var questions = document.querySelectorAll(".questions");
 
+//losing screen
 var youLose = document.getElementById("you-lose");
 var tryAgain = document.getElementById("try-again");
 
+//win screen
 var youWin = document.getElementById("you-win");
 var confirmWin = false;
 var yourScore = document.getElementById("your-score");
 var playAgain = document.getElementById("play-again");
 
+//user initials and score
 var userInitials = document.getElementById("initials");
 var score;
 var submitScore = document.getElementById("submit-score");
 
+//timer element
 var timeEl = document.getElementById("timer");
 var secondsLeft = 30;
 
+//right and wrong sounds
 var wrongSound = document.getElementById("wrong-sound");
 var rightSound = document.getElementById("correct-sound");
 
+//start quiz button, switches display and starts timer
 startQuiz.addEventListener("click", function() {
     confirmWin = false;
     titleScreen.style.display = "none";
@@ -49,6 +57,7 @@ startQuiz.addEventListener("click", function() {
     setTime();
 });
 
+//sets timer
 function setTime() {
     var timerInterval = setInterval(function() {
         timeEl.style.display = "block";
@@ -73,6 +82,8 @@ function setTime() {
     }, 1000);
 }
 
+
+//quiz buttons, incorrect plays sound and subtracts time, correct changes display
 wrongButton.forEach(function(event) {
     event.addEventListener("click", function() {
         wrongSound.play();
@@ -149,6 +160,7 @@ function replay() {
 
 });
 
+//when timer hits zero, losing screen automatically displays
 function losingScreen() {
     timeEl.style.display = "none";
     youLose.style.display = "block";
@@ -159,6 +171,7 @@ function losingScreen() {
 
 }
 
+//submits score to score page
 submitScore.addEventListener("click", function() {
     var oldUser = localStorage.getItem("user");
     var oldScore = localStorage.getItem("score");
