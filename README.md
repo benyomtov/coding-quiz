@@ -34,6 +34,8 @@ Designed by Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, Jacques Le Baill
 
 https://www.w3schools.com/ was also consulted to learn the code required for this project.
 
+Sounds sourced from https://mixkit.co/free-sound-effects/buzzer/ and https://pixabay.com/sound-effects/search/correct/.
+
 ## License
 
 No license.
